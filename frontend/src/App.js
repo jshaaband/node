@@ -15,8 +15,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React is awesome
+          Learn React is awesome this is cool
         </a>
+
+        hot reload manenos wow
       </header>
     </div>
   );
