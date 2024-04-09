@@ -18,7 +18,7 @@ function App() {
           Learn React is awesome this is cool
         </a>
 
-        hot reload manenos wow
+        hot reload manenos wow this is awesome
       </header>
     </div>
   );
