@@ -1,19 +1,8 @@
 version: "3"
 services:
-  node-app:
+  web:
     build:
-      context: frontend
-      dockerfile: frontend/Dockerfile.dev
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "80:80"
-#    volumes:
-#      - /app/node_modules
-#      - .:/app
-#  tests:
-#    build:
-#      context: frontend
-#      dockerfile: frontend/Dockerfile.dev
-#    volumes:
-#      - /app/node_modules
-#      - .:/app
-#    command: ["npm","run","test"]
