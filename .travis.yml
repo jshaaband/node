@@ -8,8 +8,7 @@ before_install:
   - docker build -t didinkaj/simpleweb -f Dockerfile.dev .
 
 scripts:
-  - docker run -e CI=true didinkaj/simpleweb npm run test
-#  - docker run -e CI=true didinkaj/simpleweb npm run test -- --coverage
+  - docker run -e CI=true didinkaj/simpleweb npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
@@ -21,4 +20,4 @@ deploy:
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: "$AWS_SECRET_KEY"
+  secret_access_key: $AWS_SECRET_KEY
