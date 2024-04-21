@@ -12,10 +12,10 @@ scripts:
   - docker run -e CI=true didinkaj/react-test npm test -- --coverage
 
 after_success:
-  - docker build didinkaj/multi-client ./client
-  - docker build didinkaj/multi-nginx ./nginx
-  - docker build didinkaj/multi-server ./server
-  - docker build didinkaj/multi-worker ./worker
+  - docker build -t didinkaj/multi-client ./client
+  - docker build -t didinkaj/multi-nginx ./nginx
+  - docker build -t didinkaj/multi-server ./server
+  - docker build -t didinkaj/multi-worker ./worker
   #login to docker hub
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   #push images to docker hub
