@@ -1,5 +1,8 @@
 {
-  "AWSEBDockerrunVersion": 2,
+  "AWSEBDockerrunVersion": "3",
+  "Authentication": {
+    "bucket": "elasticbeanstalk-us-east-1-339713071653"
+  },
   "ContainerDefinations": [
     {
       "name": "client",
