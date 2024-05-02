@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const OtherPage =  ()=>{
     return(
         <div>
-            <div className="surface-0 pt-8 text-center">
+            <div className="surface-0 pt-8 text-center mx-6">
     <div className="mb-3 font-bold text-3xl">
         <span className="text-900">One Product, </span>
         <span className="text-blue-600">Many Solutions</span>
