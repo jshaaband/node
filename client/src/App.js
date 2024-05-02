@@ -6,7 +6,8 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 import { PrimeReactProvider } from 'primereact/api';
 import { Button } from 'primereact/button';
 import OtherPage from './OtherPage';
-import Fib from './Fib';
+import Fibonacci from './Fib';
+import HomePage from './Home';
 import MenuBar from './MenuBar';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
@@ -25,7 +26,8 @@ function App() {
       <div className="App">
           <MenuBar></MenuBar>
           <div>
-              <Route exact path="/" component={Fib}/>
+              <Route exact path="/" component={HomePage}/>
+              <Route exact path="/fib" component={Fibonacci}/>
               <Route path="/otherpage" component={OtherPage}/>
             </div>
 

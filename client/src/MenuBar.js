@@ -75,6 +75,12 @@ export default function TemplateDemo() {
             icon: 'pi pi-envelope',
             badge: 3,
             template: itemRenderer
+        },
+        {
+            label: 'Fib',
+            icon: 'pi pi-calculator',
+            url: '/fib'
+
         }
     ];
 
