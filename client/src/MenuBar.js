@@ -2,7 +2,7 @@ import React from "react";
 import { Menubar } from "primereact/menubar";
 import { InputText } from "primereact/inputtext";
 import { Badge } from "primereact/badge";
-import { Avatar } from "primereact/avatar";
+import ProfileDropdown from "./ProfileDropdown";
 
 export default function TemplateDemo() {
   const itemRenderer = (item) => (
@@ -101,10 +101,7 @@ export default function TemplateDemo() {
         type="text"
         className="w-8rem sm:w-auto"
       />
-      <Avatar
-        image="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png"
-        shape="circle"
-      />
+      <ProfileDropdown></ProfileDropdown>
     </div>
   );
 
