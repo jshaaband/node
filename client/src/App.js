@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import { PrimeReactProvider } from "primereact/api";
 import OtherPage from "./OtherPage";
+import LoginPage from "./Auth/Login";
 import Fibonacci from "./Fib";
 import HomePage from "./Home";
-import MenuBar from "./MenuBar";
 import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
@@ -21,11 +21,11 @@ function App() {
     <Router>
       <PrimeReactProvider value={value}>
         <div className="App">
-          <MenuBar></MenuBar>
           <div>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/fib" component={Fibonacci} />
             <Route path="/otherpage" component={OtherPage} />
+            <Route path="/logout" component={LoginPage} />
           </div>
         </div>
       </PrimeReactProvider>

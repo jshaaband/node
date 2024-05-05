@@ -9,15 +9,16 @@ export default function PopupDoc() {
   const toast = useRef(null);
   const items = [
     {
-      label: "Options",
+      label: "Johnson Didinya",
       items: [
         {
-          label: "Refresh",
-          icon: "pi pi-refresh",
+          label: "Profile",
+          icon: "pi pi-user",
         },
         {
-          label: "Export",
-          icon: "pi pi-upload",
+          label: "Logout",
+          icon: "pi pi-lock",
+          url: "/logout",
         },
       ],
     },

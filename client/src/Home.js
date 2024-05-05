@@ -1,8 +1,10 @@
 import { Button } from "primereact/button";
+import Layout from "./Layout/Layout";
 
 const HomePage = () => {
   return (
     <div>
+      <Layout></Layout>
       <div className="surface-0 text-700 text-center my-8 py-2">
         <div className="text-blue-600 font-bold mb-3">
           <i className="pi pi-discord"></i>&nbsp;POWERED BY DISCORD

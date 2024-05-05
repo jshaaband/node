@@ -5,6 +5,7 @@ import { InputText } from "primereact/inputtext";
 import { Column } from "primereact/column";
 import { DataTable } from "primereact/datatable";
 import { Message } from "primereact/message";
+import Layout from "./Layout/Layout";
 
 class Fib extends Component {
   state = {
@@ -79,6 +80,7 @@ class Fib extends Component {
   render() {
     return (
       <div>
+        <Layout></Layout>
         <div className="surface-0 text-700 text-center pt-5">
           <div className="text-900 font-bold text-3xl mb-3">
             Enter your index
