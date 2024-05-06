@@ -1,27 +1,10 @@
 import { Button } from "primereact/button";
-import Layout from "./Layout/Layout";
+import Layout from "../../Layout/Layout";
 
 const HomePage = () => {
   return (
     <div>
       <Layout></Layout>
-      <div className="surface-0 text-700 text-center my-8 py-2">
-        <div className="text-blue-600 font-bold mb-3">
-          <i className="pi pi-discord"></i>&nbsp;POWERED BY DISCORD
-        </div>
-        <div className="text-900 font-bold text-5xl mb-3">
-          Join Our Design Community
-        </div>
-        <div className="text-700 text-xl mb-5">
-          Lorem test dolor sit, amet consectetur adipisicing elit. Velit numquam
-          eligendi quos.
-        </div>
-        <Button
-          label="Join Now"
-          icon="pi pi-discord"
-          className="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap"
-        />
-      </div>
 
       <div className="grid mx-8 mt-5">
         <div className="col-12 md:col-6 lg:col-3">

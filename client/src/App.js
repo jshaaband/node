@@ -6,7 +6,7 @@ import { PrimeReactProvider } from "primereact/api";
 import OtherPage from "./OtherPage";
 import LoginPage from "./Auth/Login";
 import Fibonacci from "./Fib";
-import HomePage from "./Home";
+import HomePage from "./Admin/Dashboard/Home";
 import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
