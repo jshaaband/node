@@ -4,6 +4,10 @@ import { InputText } from "primereact/inputtext";
 
 function setChecked() {}
 
+function login() {
+  return (window.location.href = "/");
+}
+
 const checked = {};
 
 const LoginPage = () => {
@@ -57,7 +61,12 @@ const LoginPage = () => {
             </a>
           </div>
 
-          <Button label="Sign In" icon="pi pi-user" className="w-full" />
+          <Button
+            label="Sign In"
+            icon="pi pi-user"
+            onClick={login}
+            className="w-full"
+          />
         </div>
       </div>
     </div>
