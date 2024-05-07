@@ -51,6 +51,13 @@ export default function TemplateDemo() {
           template: itemRenderer,
         },
         {
+          label: "Fib",
+          icon: "pi pi-calculator",
+          shortcut: "⌘+F",
+          template: itemRenderer,
+          url: "/fib",
+        },
+        {
           separator: true,
         },
         {
@@ -79,11 +86,6 @@ export default function TemplateDemo() {
       badge: 3,
       template: itemRenderer,
       url: "/contact",
-    },
-    {
-      label: "Fib",
-      icon: "pi pi-calculator",
-      url: "/fib",
     },
   ];
 
