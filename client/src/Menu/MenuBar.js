@@ -6,7 +6,7 @@ import ProfileDropdown from "./ProfileDropdown";
 
 export default function TemplateDemo() {
   const itemRenderer = (item) => (
-    <a className="flex align-items-center p-menuitem-link">
+    <a className="flex align-items-center p-menuitem-link" href={item.url}>
       <span className={item.icon} />
       <span className="mx-2">{item.label}</span>
       {item.badge && <Badge className="ml-auto" value={item.badge} />}
@@ -78,6 +78,7 @@ export default function TemplateDemo() {
       icon: "pi pi-envelope",
       badge: 3,
       template: itemRenderer,
+      url: "/contact",
     },
     {
       label: "Fib",

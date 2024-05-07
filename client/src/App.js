@@ -7,6 +7,7 @@ import OtherPage from "./OtherPage";
 import LoginPage from "./Auth/Login";
 import Fibonacci from "./Fib";
 import HomePage from "./Admin/Dashboard/Home";
+import ContactPage from "./Admin/Contacts/Contacts";
 import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
@@ -25,6 +26,7 @@ function App() {
             <Route exact path="/" component={HomePage} />
             <Route exact path="/fib" component={Fibonacci} />
             <Route path="/otherpage" component={OtherPage} />
+            <Route path="/contact" component={ContactPage} />
             <Route path="/logout" component={LoginPage} />
           </div>
         </div>
