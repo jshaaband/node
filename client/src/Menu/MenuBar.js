@@ -43,12 +43,14 @@ export default function TemplateDemo() {
           icon: "pi pi-server",
           shortcut: "⌘+B",
           template: itemRenderer,
+          url: "/tic-tac-toe",
         },
         {
           label: "UI Kit",
           icon: "pi pi-pencil",
           shortcut: "⌘+U",
           template: itemRenderer,
+          url: "/ui-kit",
         },
         {
           label: "Fib",
