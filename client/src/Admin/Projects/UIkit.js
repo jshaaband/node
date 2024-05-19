@@ -12,8 +12,6 @@ import illustration3 from "../../images/img_10.png";
 import chart1 from "../../images/img_11.png";
 import chart2 from "../../images/img_12.png";
 
-const myStyle = {};
-
 const UIKitPage = () => {
   return (
     <div>

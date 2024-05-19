@@ -75,7 +75,7 @@ export default function TemplateDemo() {
             {
               label: "Ultima",
               icon: "pi pi-palette",
-              badge: 3,
+              badge: 5,
               template: itemRenderer,
             },
           ],
