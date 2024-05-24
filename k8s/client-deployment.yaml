@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: client-deployment
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       component: web
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: client
-          image: didinkaj/multi-client
+          image: didinkaj/multi-client:v1.0
           ports:
-            - containerPort: 9999
+            - containerPort: 3000
