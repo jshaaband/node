@@ -5,7 +5,8 @@ metadata:
 spec:
   replicas: 1
   selector:
-    component: worker
+    matchLabels:
+      component: worker
   template:
     metadata:
       labels:
