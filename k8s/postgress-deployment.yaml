@@ -28,5 +28,6 @@ spec:
           env:
             - name: PGPASSWORD
               valueFrom:
-                secreteKeyRef:
-                  name: PGPASSWORD
+                secretKeyRef:
+                  name: pgpassword
+                  key: PGPASSWORD
