@@ -139,7 +139,7 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <div className="surface-0 text-700 text-center">
+      <div className="surface-0 text-700 pb-8 text-center">
         <div className="text-blue-600 font-bold mb-3">
           <i className="pi pi-discord"></i>&nbsp;POWERED BY DISCORD
         </div>
