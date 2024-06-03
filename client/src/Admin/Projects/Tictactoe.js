@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../../Layout/Layout";
+import FooterPage from "../../Layout/Footer/Footer";
 
 export default function Board() {
   return (
@@ -20,6 +21,7 @@ export default function Board() {
         <button className="square">8</button>
         <button className="square">9</button>
       </div>
+      <FooterPage></FooterPage>
     </>
   );
 }

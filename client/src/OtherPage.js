@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "./Layout/Layout";
+import FooterPage from "./Layout/Footer/Footer";
 
 const OtherPage = () => {
   return (
@@ -137,6 +138,7 @@ const OtherPage = () => {
           </div>
         </div>
       </div>
+      <FooterPage></FooterPage>
     </div>
   );
 };

@@ -11,6 +11,7 @@ import illustration2 from "../../images/img_9.png";
 import illustration3 from "../../images/img_10.png";
 import chart1 from "../../images/img_11.png";
 import chart2 from "../../images/img_12.png";
+import FooterPage from "../../Layout/Footer/Footer";
 
 const UIKitPage = () => {
   return (
@@ -652,6 +653,7 @@ const UIKitPage = () => {
           </div>
         </div>
       </div>
+      <FooterPage></FooterPage>
     </div>
   );
 };
