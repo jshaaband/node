@@ -1,5 +1,7 @@
 import { Button } from "primereact/button";
 import Layout from "../../Layout/Layout";
+import FooterPage from "../../Layout/Footer/Footer";
+import React from "react";
 
 const HomePage = () => {
   return (
@@ -230,6 +232,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      <FooterPage></FooterPage>
     </div>
   );
 };

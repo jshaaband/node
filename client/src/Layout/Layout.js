@@ -9,6 +9,7 @@ function Layout() {
   return (
     <div>
       <MenuBar></MenuBar>
+      <slot></slot>
     </div>
   );
 }
