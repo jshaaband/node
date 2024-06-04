@@ -19,8 +19,8 @@ export default function TemplateDemo() {
   );
   const items = [
     {
-      label: "Dashboard",
-      icon: "pi pi-home",
+      label: "Home",
+      icon: "pi pi-globe",
       url: "/",
     },
     {

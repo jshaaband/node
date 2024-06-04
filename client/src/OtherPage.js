@@ -6,41 +6,7 @@ const OtherPage = () => {
   return (
     <div>
       <Layout></Layout>
-
-      <div className="surface-0">
-        <ul className="list-none py-3 px-5 m-0 surface-section flex align-items-center font-medium overflow-x-auto border-top-1 border-bottom-1 surface-border shadow-2 lg:shadow-none">
-          <li className="pr-3">
-            <a className="cursor-pointer">
-              <i className="pi pi-home text-blue-500"></i>
-            </a>
-          </li>
-          <li className="px-2">
-            <i className="pi pi-angle-right text-500 font-medium"></i>
-          </li>
-          <li className="px-2">
-            <a className="cursor-pointer text-blue-500 white-space-nowrap font-medium">
-              Level 3
-            </a>
-          </li>
-          <li className="px-2">
-            <i className="pi pi-angle-right text-500"></i>
-          </li>
-          <li className="px-2">
-            <a className="cursor-pointer text-blue-500 white-space-nowrap font-medium">
-              Level 2
-            </a>
-          </li>
-          <li className="px-2">
-            <i className="pi pi-angle-right text-500"></i>
-          </li>
-          <li className="px-2">
-            <a className="cursor-pointer text-900 white-space-nowrap font-medium">
-              Level 1
-            </a>
-          </li>
-        </ul>
-      </div>
-
+      
       <div className="surface-0 pt-8 text-center mx-6">
         <div className="mb-3 font-bold text-3xl">
           <span className="text-900">One Product, </span>
