@@ -52,8 +52,6 @@ const HomePage = () => {
               </div>
               <div className="text-900 font-bold text-6xl mb-5">
                 Get Started with PesaMarket
-                {/*Make informed decisions and potentially save money by choosing*/}
-                {/*the most suitable option for your needs.*/}
               </div>
               <span
                 className="inline-flex align-items-center bg-blue-50 px-3 py-2 mr-2 mb-2 lg:mb-0 border-1 border-blue-200"
@@ -184,8 +182,8 @@ const HomePage = () => {
           Pricing Plans
         </div>
         <div className="text-700 text-xl mb-6 text-center line-height-3">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-          numquam eligendi quos.
+          Make informed decisions and potentially save money by choosing the
+          most suitable option for your needs.
         </div>
 
         <div className="grid">
