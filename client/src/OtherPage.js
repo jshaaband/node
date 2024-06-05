@@ -6,7 +6,6 @@ const OtherPage = () => {
   return (
     <div>
       <Layout></Layout>
-      
       <div className="surface-0 pt-8 text-center mx-6">
         <div className="mb-3 font-bold text-3xl">
           <span className="text-900">One Product, </span>
