@@ -1,0 +1,39 @@
+sudo: required
+language: generic
+
+services:
+  - docker
+
+before_install:
+  - docker build -t didinkaj/react-test -f ./client/Dockerfile.dev ./client
+
+scripts:
+  - docker run -e CI=true didinkaj/react-test npm test -- --coverage
+
+after_success:
+  - docker build -t didinkaj/multi-client ./client
+  - docker build -t didinkaj/multi-nginx ./nginx
+  - docker build -t didinkaj/multi-server ./server
+  - docker build -t didinkaj/multi-worker ./worker
+  #login to docker hub
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  #push images to docker hub
+  - docker push didinkaj/multi-client
+  - docker push didinkaj/multi-nginx
+  - docker push didinkaj/multi-server
+  - docker push didinkaj/multi-worker
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "multi-docker"
+  env: "Multi-docker-env"
+  bucket_name: "elasticbeanstalk-us-east-1-339713071653"
+  bucket_path: "docker-multi"
+  on:
+    branch: main
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: "$AWS_SECRET_KEY"
+
+
+#kubectl create secret generic pgpassword --from-literal PGPASSWORD=postgres_password
