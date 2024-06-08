@@ -15,7 +15,7 @@ const HomePage = () => {
       <Layout></Layout>
 
       <div className="grid grid-nogutter surface-0 text-800">
-        <div className="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center ">
+        <div className="col-12 md:col-6 p-3 md:p-6 text-center md:text-left flex align-items-center ">
           <section>
             <span className="block text-6xl font-bold mb-1">Find the best</span>
             <div className="text-6xl text-primary font-bold mb-3">
@@ -48,7 +48,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="grid mx-8 mt-5">
+      <div className="grid mx-2 md:mx-8 mt-5">
         <div className="surface-section px-4 pt-2 md:px-6 lg:px-4">
           <div className="flex flex-column lg:flex-row align-items-center justify-content-between">
             <div className="text-center lg:text-left lg:pr-8">
@@ -182,7 +182,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="surface-0 my-8 mx-6">
+      <div className="surface-0 my-4 md:my-8 mx-2 md:mx-6">
         <div className="text-900 font-bold text-primary text-5xl mb-4 text-center">
           Pricing Plans
         </div>
@@ -323,7 +323,7 @@ const HomePage = () => {
             <div className="font-medium text-500 mb-3">
               Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.
             </div>
-            <div className="flex border-2 border-dashed border-300">
+            <div className="grid border-2 border-dashed border-300">
               <div className="col-12 lg:col-6">
                 <div className="surface-card shadow-2 border-round p-4 h-full">
                   <div className="flex align-items-center justify-content-between mb-3">
