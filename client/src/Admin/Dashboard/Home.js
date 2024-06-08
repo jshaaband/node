@@ -55,7 +55,7 @@ const HomePage = () => {
               <div className="text-blue-600 font-medium mb-1 text-xl">
                 TAKE THE NEXT STEP
               </div>
-              <div className="text-900 font-bold text-6xl mb-5">
+              <div className="text-900 font-bold text-5xl mb-5">
                 Get Started with PesaMarket
               </div>
               <span
@@ -183,7 +183,7 @@ const HomePage = () => {
       </div>
 
       <div className="surface-0 my-8 mx-6">
-        <div className="text-900 font-bold text-6xl mb-4 text-center">
+        <div className="text-900 font-bold text-primary text-5xl mb-4 text-center">
           Pricing Plans
         </div>
         <div className="text-700 text-xl mb-6 text-center line-height-3">
@@ -221,7 +221,10 @@ const HomePage = () => {
                   </li>
                 </ul>
                 <hr className="mb-3 mx-0 border-top-1 border-bottom-none border-300 mt-auto" />
-                <Button label="Buy Now" className="p-3 w-full mt-auto" />
+                <Button
+                  label="Buy Now"
+                  className="p-3 w-full mt-auto p-button-outlined"
+                />
               </div>
             </div>
           </div>
@@ -315,241 +318,238 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="col-12 lg:col-6 flex">
-            <div className="col-12 lg:col-6">
-              <div className="surface-card shadow-2 border-round p-4 h-full">
-                <div className="flex align-items-center justify-content-between mb-3">
-                  <div className="text-900 font-medium text-xl">
-                    Team Activity
-                  </div>
-                  <div>
-                    <button className="p-button p-component p-button-text p-button-plain p-button-rounded p-button-icon-only">
-                      <span className="p-button-icon p-c pi pi-ellipsis-v"></span>
-                      <span className="p-button-label p-c">&nbsp;</span>
-                      <span
-                        role="presentation"
-                        className="p-ink"
-                        style={{ height: "48px", width: "48px" }}
-                      ></span>
-                    </button>
-                  </div>
-                </div>
-                <ul className="list-none p-0 m-0">
-                  <li className="py-3 border-bottom-1 surface-border flex md:align-items-start md:justify-content-between flex-column md:flex-row">
-                    <div className="flex align-items-start mr-0 lg:mr-5">
-                      <img
-                        src={avatar1}
-                        alt="avatar-f-1"
-                        className="mr-3 w-3rem h-3rem"
-                      />
-                      <div>
-                        <span className="text-900 font-medium block mb-2">
-                          Jane Cooper
-                        </span>
-                        <div className="text-700 mb-2">
-                          responded to an issue.
-                        </div>
-                        <a className="text-primary cursor-pointer">
-                          <i className="pi pi-github text-sm mr-2"></i>
-                          <span>Issue #1185</span>
-                        </a>
-                      </div>
-                    </div>
-                    <span className="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">
-                      14 mins ago
-                    </span>
-                  </li>
-                  <li className="py-3 border-bottom-1 surface-border flex md:align-items-start md:justify-content-between flex-column md:flex-row">
-                    <div className="flex align-items-start mr-0 lg:mr-5">
-                      <img
-                        src={avatar2}
-                        alt="avatar-m-1"
-                        className="mr-3 w-3rem h-3rem"
-                      />
-                      <div>
-                        <span className="text-900 font-medium block mb-2">
-                          Robert Fox
-                        </span>
-                        <div className="text-700">
-                          changed team size from
-                          <span className="text-900 font-medium">5</span> to
-                          <span className="text-900 font-medium">6</span>.
-                        </div>
-                      </div>
-                    </div>
-                    <span className="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">
-                      20 mins ago
-                    </span>
-                  </li>
-                  <li className="py-3 border-bottom-1 surface-border flex md:align-items-start md:justify-content-between flex-column md:flex-row">
-                    <div className="flex align-items-start mr-0 lg:mr-5">
-                      <img
-                        src={avatar3}
-                        alt="avatar-f-2"
-                        className="mr-3 w-3rem h-3rem"
-                      />
-                      <div>
-                        <span className="text-900 font-medium block mb-2">
-                          Kristin Watson Cooper
-                        </span>
-                        <div className="text-700 mb-2">
-                          created a Q4 presentation to an issue.
-                        </div>
-                        <a className="text-primary cursor-pointer">
-                          <i className="pi pi-file-pdf text-sm mr-2"></i>
-                          <span>q4_presentation.pdf</span>
-                        </a>
-                      </div>
-                    </div>
-                    <span className="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">
-                      38 mins ago
-                    </span>
-                  </li>
-                  <li className="py-3 border-bottom-1 surface-border flex md:align-items-start md:justify-content-between flex-column md:flex-row">
-                    <div className="flex align-items-start mr-0 lg:mr-5">
-                      <img
-                        src={avatar4}
-                        alt="avatar-f-3"
-                        className="mr-3 w-3rem h-3rem"
-                      />
-                      <div>
-                        <span className="text-900 font-medium block mb-2">
-                          Annette Black
-                        </span>
-                        <div className="text-700">
-                          added
-                          <span className="text-900 font-medium">
-                            Nico Greenberg
-                          </span>
-                          to
-                          <span className="text-primary">Watchlist Tier-1</span>
-                          .
-                        </div>
-                      </div>
-                    </div>
-                    <span className="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">
-                      1 day ago
-                    </span>
-                  </li>
-                  <li className="py-3 flex md:align-items-start md:justify-content-between flex-column md:flex-row">
-                    <div className="flex align-items-start mr-0 lg:mr-5">
-                      <img
-                        src={avatar5}
-                        alt="avatar-m-2"
-                        className="mr-3 w-3rem h-3rem"
-                      />
-                      <div>
-                        <span className="text-900 font-medium block mb-2">
-                          Floyd Miles
-                        </span>
-                        <div className="text-700">
-                          has refunded a blue t-shirt for
-                          <span className="text-primary">$79</span>.
-                        </div>
-                      </div>
-                    </div>
-                    <span className="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">
-                      4 days ago
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-12 lg:col-6">
-              <div className="surface-card shadow-2 border-round p-4 h-full">
-                <div className="flex align-items-center justify-content-between mb-4">
-                  <div className="text-900 font-medium text-xl">
-                    Notifications
-                  </div>
-                  <div>
-                    <button className="p-button p-component p-button-text p-button-plain p-button-rounded p-button-icon-only">
-                      <span className="p-button-icon p-c pi pi-ellipsis-v"></span>
-                      <span className="p-button-label p-c">&nbsp;</span>
-                      <span
-                        role="presentation"
-                        className="p-ink"
-                        style={{ height: "48px", width: "48px" }}
-                      ></span>
-                    </button>
-                  </div>
-                </div>
-                <span className="block text-600 font-medium mb-3">TODAY</span>
-                <ul className="p-0 mx-0 mt-0 mb-4 list-none">
-                  <li className="flex align-items-center py-2 border-bottom-1 surface-border">
-                    <div className="w-3rem h-3rem flex align-items-center justify-content-center bg-blue-100 border-circle mr-3 flex-shrink-0">
-                      <i className="pi pi-dollar text-xl text-blue-500"></i>
-                    </div>
-                    <span className="text-900 line-height-3 font-medium">
-                      Richard Jones
-                      <span className="text-700 font-normal">
-                        has purchased a blue t-shirt for
-                        <span className="text-primary font-medium">$79</span>
-                      </span>
-                    </span>
-                  </li>
-                  <li className="flex align-items-center py-2">
-                    <div className="w-3rem h-3rem flex align-items-center justify-content-center bg-orange-100 border-circle mr-3 flex-shrink-0">
-                      <i className="pi pi-download text-xl text-orange-500"></i>
-                    </div>
-                    <span className="text-700 line-height-3">
-                      Your request for withdrawal of
-                      <span className="text-primary font-medium">$2500</span>
-                      has been initiated.
-                    </span>
-                  </li>
-                </ul>
-                <span className="block text-600 font-medium mb-3">
-                  YESTERDAY
-                </span>
-                <ul className="p-0 m-0 list-none">
-                  <li className="flex align-items-center py-2 border-bottom-1 surface-border">
-                    <div className="w-3rem h-3rem flex align-items-center justify-content-center bg-blue-100 border-circle mr-3 flex-shrink-0">
-                      <i className="pi pi-dollar text-xl text-blue-500"></i>
-                    </div>
-                    <span className="text-900 line-height-3 font-medium">
-                      Keyser Wick
-                      <span className="text-700 font-normal">
-                        has purchased a black jacket for
-                        <span className="text-primary font-medium">$59</span>
-                      </span>
-                    </span>
-                  </li>
-                  <li className="flex align-items-center py-2 border-bottom-1 surface-border">
-                    <div className="w-3rem h-3rem flex align-items-center justify-content-center bg-pink-100 border-circle mr-3 flex-shrink-0">
-                      <i className="pi pi-question text-xl text-pink-500"></i>
-                    </div>
-                    <span className="text-900 line-height-3 font-medium">
-                      Jane Davis
-                      <span className="text-700 font-normal">
-                        has posted a new questions about your product.
-                      </span>
-                    </span>
-                  </li>
-                  <li className="flex align-items-center py-2">
-                    <div className="w-3rem h-3rem flex align-items-center justify-content-center bg-green-100 border-circle mr-3 flex-shrink-0">
-                      <i className="pi pi-arrow-up text-xl text-green-500"></i>
-                    </div>
-                    <span className="text-900 line-height-3 font-medium">
-                      Claire Smith
-                      <span className="text-700 font-normal">
-                        has upvoted your store along with a comment.
-                      </span>
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
           <div className="col-12  surface-0 py-4 shadow-2 border-round">
-            <div className="text-3xl font-medium text-900 mb-3">Card Title</div>
+            <div className="text-900 font-bold text-5xl">Card Title</div>
             <div className="font-medium text-500 mb-3">
               Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.
             </div>
-            <div
-              style={{ height: "150px" }}
-              className="border-2 border-dashed border-300"
-            ></div>
+            <div className="flex border-2 border-dashed border-300">
+              <div className="col-12 lg:col-6">
+                <div className="surface-card shadow-2 border-round p-4 h-full">
+                  <div className="flex align-items-center justify-content-between mb-3">
+                    <div className="text-900 font-medium text-xl">
+                      Team Activity
+                    </div>
+                    <div>
+                      <button className="p-button p-component p-button-text p-button-plain p-button-rounded p-button-icon-only">
+                        <span className="p-button-icon p-c pi pi-ellipsis-v"></span>
+                        <span className="p-button-label p-c">&nbsp;</span>
+                        <span
+                          role="presentation"
+                          className="p-ink"
+                          style={{ height: "48px", width: "48px" }}
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                  <ul className="list-none p-0 m-0">
+                    <li className="py-3 border-bottom-1 surface-border flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                      <div className="flex align-items-start mr-0 lg:mr-5">
+                        <img
+                          src={avatar1}
+                          alt="avatar-f-1"
+                          className="mr-3 w-3rem h-3rem"
+                        />
+                        <div>
+                          <span className="text-900 font-medium block mb-2">
+                            Jane Cooper
+                          </span>
+                          <div className="text-700 mb-2">
+                            responded to an issue.
+                          </div>
+                          <a className="text-primary cursor-pointer">
+                            <i className="pi pi-github text-sm mr-2"></i>
+                            <span>Issue #1185</span>
+                          </a>
+                        </div>
+                      </div>
+                      <span className="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">
+                        14 mins ago
+                      </span>
+                    </li>
+                    <li className="py-3 border-bottom-1 surface-border flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                      <div className="flex align-items-start mr-0 lg:mr-5">
+                        <img
+                          src={avatar2}
+                          alt="avatar-m-1"
+                          className="mr-3 w-3rem h-3rem"
+                        />
+                        <div>
+                          <span className="text-900 font-medium block mb-2">
+                            Robert Fox
+                          </span>
+                          <div className="text-700">
+                            changed team size from
+                            <span className="text-900 font-medium">5</span> to
+                            <span className="text-900 font-medium">6</span>.
+                          </div>
+                        </div>
+                      </div>
+                      <span className="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">
+                        20 mins ago
+                      </span>
+                    </li>
+                    <li className="py-3 border-bottom-1 surface-border flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                      <div className="flex align-items-start mr-0 lg:mr-5">
+                        <img
+                          src={avatar3}
+                          alt="avatar-f-2"
+                          className="mr-3 w-3rem h-3rem"
+                        />
+                        <div>
+                          <span className="text-900 font-medium block mb-2">
+                            Kristin Watson Cooper
+                          </span>
+                          <div className="text-700 mb-2">
+                            created a Q4 presentation to an issue.
+                          </div>
+                          <a className="text-primary cursor-pointer">
+                            <i className="pi pi-file-pdf text-sm mr-2"></i>
+                            <span>q4_presentation.pdf</span>
+                          </a>
+                        </div>
+                      </div>
+                      <span className="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">
+                        38 mins ago
+                      </span>
+                    </li>
+                    <li className="py-3 border-bottom-1 surface-border flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                      <div className="flex align-items-start mr-0 lg:mr-5">
+                        <img
+                          src={avatar4}
+                          alt="avatar-f-3"
+                          className="mr-3 w-3rem h-3rem"
+                        />
+                        <div>
+                          <span className="text-900 font-medium block mb-2">
+                            Annette Black
+                          </span>
+                          <div className="text-700">
+                            added
+                            <span className="text-900 font-medium">
+                              Nico Greenberg
+                            </span>
+                            to
+                            <span className="text-primary">
+                              Watchlist Tier-1
+                            </span>
+                            .
+                          </div>
+                        </div>
+                      </div>
+                      <span className="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">
+                        1 day ago
+                      </span>
+                    </li>
+                    <li className="py-3 flex md:align-items-start md:justify-content-between flex-column md:flex-row">
+                      <div className="flex align-items-start mr-0 lg:mr-5">
+                        <img
+                          src={avatar5}
+                          alt="avatar-m-2"
+                          className="mr-3 w-3rem h-3rem"
+                        />
+                        <div>
+                          <span className="text-900 font-medium block mb-2">
+                            Floyd Miles
+                          </span>
+                          <div className="text-700">
+                            has refunded a blue t-shirt for
+                            <span className="text-primary">$79</span>.
+                          </div>
+                        </div>
+                      </div>
+                      <span className="block text-500 font-medium ml-7 md:ml-5 mt-2 md:mt-0">
+                        4 days ago
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-12 lg:col-6">
+                <div className="surface-card shadow-2 border-round p-4 h-full">
+                  <div className="flex align-items-center justify-content-between mb-4">
+                    <div className="text-900 font-medium text-xl">
+                      Notifications
+                    </div>
+                    <div>
+                      <button className="p-button p-component p-button-text p-button-plain p-button-rounded p-button-icon-only">
+                        <span className="p-button-icon p-c pi pi-ellipsis-v"></span>
+                        <span className="p-button-label p-c">&nbsp;</span>
+                        <span
+                          role="presentation"
+                          className="p-ink"
+                          style={{ height: "48px", width: "48px" }}
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                  <span className="block text-600 font-medium mb-3">TODAY</span>
+                  <ul className="p-0 mx-0 mt-0 mb-4 list-none">
+                    <li className="flex align-items-center py-2 border-bottom-1 surface-border">
+                      <div className="w-3rem h-3rem flex align-items-center justify-content-center bg-blue-100 border-circle mr-3 flex-shrink-0">
+                        <i className="pi pi-dollar text-xl text-blue-500"></i>
+                      </div>
+                      <span className="text-900 line-height-3 font-medium">
+                        Richard Jones
+                        <span className="text-700 font-normal">
+                          has purchased a blue t-shirt for
+                          <span className="text-primary font-medium">$79</span>
+                        </span>
+                      </span>
+                    </li>
+                    <li className="flex align-items-center py-2">
+                      <div className="w-3rem h-3rem flex align-items-center justify-content-center bg-orange-100 border-circle mr-3 flex-shrink-0">
+                        <i className="pi pi-download text-xl text-orange-500"></i>
+                      </div>
+                      <span className="text-700 line-height-3">
+                        Your request for withdrawal of
+                        <span className="text-primary font-medium">$2500</span>
+                        has been initiated.
+                      </span>
+                    </li>
+                  </ul>
+                  <span className="block text-600 font-medium mb-3">
+                    YESTERDAY
+                  </span>
+                  <ul className="p-0 m-0 list-none">
+                    <li className="flex align-items-center py-2 border-bottom-1 surface-border">
+                      <div className="w-3rem h-3rem flex align-items-center justify-content-center bg-blue-100 border-circle mr-3 flex-shrink-0">
+                        <i className="pi pi-dollar text-xl text-blue-500"></i>
+                      </div>
+                      <span className="text-900 line-height-3 font-medium">
+                        Keyser Wick
+                        <span className="text-700 font-normal">
+                          has purchased a black jacket for
+                          <span className="text-primary font-medium">$59</span>
+                        </span>
+                      </span>
+                    </li>
+                    <li className="flex align-items-center py-2 border-bottom-1 surface-border">
+                      <div className="w-3rem h-3rem flex align-items-center justify-content-center bg-pink-100 border-circle mr-3 flex-shrink-0">
+                        <i className="pi pi-question text-xl text-pink-500"></i>
+                      </div>
+                      <span className="text-900 line-height-3 font-medium">
+                        Jane Davis
+                        <span className="text-700 font-normal">
+                          has posted a new questions about your product.
+                        </span>
+                      </span>
+                    </li>
+                    <li className="flex align-items-center py-2">
+                      <div className="w-3rem h-3rem flex align-items-center justify-content-center bg-green-100 border-circle mr-3 flex-shrink-0">
+                        <i className="pi pi-arrow-up text-xl text-green-500"></i>
+                      </div>
+                      <span className="text-900 line-height-3 font-medium">
+                        Claire Smith
+                        <span className="text-700 font-normal">
+                          has upvoted your store along with a comment.
+                        </span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
