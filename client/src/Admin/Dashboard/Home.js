@@ -321,12 +321,12 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="col-12  surface-0 py-4 shadow-2 border-round">
-            <div className="text-900 font-bold text-5xl">Card Title</div>
-            <div className="font-medium text-500 mb-3">
+          <div className="col-12  surface-0 py-4">
+            <div className="text-900 font-bold text-5xl mb-4">Card Title</div>
+            <div className="font-medium text-500 mb-6">
               Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.
             </div>
-            <div className="grid border-2 border-dashed border-300">
+            <div className="grid ">
               <div className="col-12 lg:col-6">
                 <div className="surface-card shadow-2 border-round p-4 h-full">
                   <div className="flex align-items-center justify-content-between mb-3">
@@ -555,7 +555,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="surface-0 my-4 md:my-8 mx-2 md:mx-6">
+        <div className="surface-0 my-4 md:my-6 mx-2 md:mx-6">
           <div className="text-900 font-bold text-primary text-5xl mb-4 text-center">
             Pricing Plans
           </div>
