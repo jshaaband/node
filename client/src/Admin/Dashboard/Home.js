@@ -8,6 +8,9 @@ import avatar2 from "../../images/img_4.png";
 import avatar3 from "../../images/img_5.png";
 import avatar4 from "../../images/img_6.png";
 import avatar5 from "../../images/img_7.png";
+import illustration1 from "../../images/img_8.png";
+import illustration2 from "../../images/img_9.png";
+import illustration3 from "../../images/img_10.png";
 
 const HomePage = () => {
   return (
@@ -548,6 +551,89 @@ const HomePage = () => {
                     </li>
                   </ul>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="surface-0 my-4 md:my-8 mx-2 md:mx-6">
+          <div className="text-900 font-bold text-primary text-5xl mb-4 text-center">
+            Pricing Plans
+          </div>
+          <div className="text-700 text-xl mb-6 text-center line-height-3">
+            Make informed decisions and potentially save money by choosing the
+            most suitable option for your needs.
+          </div>
+          <div className="grid">
+            <div className="col-12 lg:col-4">
+              <div className="surface-card border-round shadow-2 p-4 text-center">
+                <img
+                  src={illustration1}
+                  alt="windows"
+                  className="mx-auto block mb-4"
+                />
+                <div className="text-900 font-medium mb-2 text-xl">
+                  Title Placeholder
+                </div>
+                <p className="mt-0 mb-4 p-0 line-height-3">
+                  Nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra
+                  tellus in hac habitasse platea dictumst.
+                </p>
+                <button
+                  aria-label="Learn More"
+                  className="p-button p-component"
+                >
+                  <span className="p-button-icon p-c p-button-icon-left pi pi-arrow-right p-button-rounded"></span>
+                  <span className="p-button-label p-c">Learn More</span>
+                  <span role="presentation" className="p-ink"></span>
+                </button>
+              </div>
+            </div>
+            <div className="col-12 lg:col-4">
+              <div className="surface-card border-round shadow-2 p-4 text-center">
+                <img
+                  src={illustration2}
+                  alt="security"
+                  className="mx-auto block mb-4"
+                />
+                <div className="text-900 font-medium mb-2 text-xl">
+                  Title Placeholder
+                </div>
+                <p className="mt-0 mb-4 p-0 line-height-3">
+                  Nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra
+                  tellus in hac habitasse platea dictumst.
+                </p>
+                <button
+                  aria-label="Learn More"
+                  className="p-button p-component"
+                >
+                  <span className="p-button-icon p-c p-button-icon-left pi pi-arrow-right p-button-rounded"></span>
+                  <span className="p-button-label p-c">Learn More</span>
+                  <span role="presentation" className="p-ink"></span>
+                </button>
+              </div>
+            </div>
+            <div className="col-12 lg:col-4">
+              <div className="surface-card border-round shadow-2 p-4 text-center">
+                <img
+                  src={illustration3}
+                  alt="live-collaboration"
+                  className="mx-auto block mb-4"
+                />
+                <div className="text-900 font-medium mb-2 text-xl">
+                  Title Placeholder
+                </div>
+                <p className="mt-0 mb-4 p-0 line-height-3">
+                  Nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra
+                  tellus in hac habitasse platea dictumst.
+                </p>
+                <button
+                  aria-label="Learn More"
+                  className="p-button p-component"
+                >
+                  <span className="p-button-icon p-c p-button-icon-left pi pi-arrow-right p-button-rounded"></span>
+                  <span className="p-button-label p-c">Learn More</span>
+                  <span role="presentation" className="p-ink"></span>
+                </button>
               </div>
             </div>
           </div>
