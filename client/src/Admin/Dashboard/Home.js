@@ -186,7 +186,7 @@ const HomePage = () => {
       </div>
 
       <div className="surface-0 my-4 md:my-8 mx-2 md:mx-6">
-        <div className="text-900 font-bold text-primary text-5xl mb-4 text-center">
+        <div className="text-900 font-bold text-5xl mb-4 text-center">
           Pricing Plans
         </div>
         <div className="text-700 text-xl mb-6 text-center line-height-3">
@@ -556,7 +556,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="surface-0 my-4 md:my-6 mx-2 md:mx-6">
-          <div className="text-900 font-bold text-primary text-5xl mb-4 text-center">
+          <div className="text-900 font-bold  text-5xl mb-4 text-center">
             Pricing Plans
           </div>
           <div className="text-700 text-xl mb-6 text-center line-height-3">
