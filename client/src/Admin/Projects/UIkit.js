@@ -16,7 +16,7 @@ const UIKitPage = () => {
   return (
     <>
       <Layout></Layout>
-      <div className="block-content">
+      <div className="block-content m-4">
         <div>
           <div className="min-h-screen flex flex-column">
             <div className=" flex flex-column flex-auto">
