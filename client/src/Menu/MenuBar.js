@@ -37,6 +37,7 @@ export default function TemplateDemo() {
           icon: "pi pi-bolt",
           shortcut: "⌘+S",
           template: itemRenderer,
+          url: "/core",
         },
         {
           label: "Blocks",

@@ -13,6 +13,7 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
 import UIKitPage from "./Admin/Projects/UIkit";
+import CorePage from "./Admin/Projects/Core";
 import TicTacToePage from "./Admin/Projects/Tictactoe";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/contact" component={ContactPage} />
             <Route path="/ui-kit" component={UIKitPage} />
             <Route path="/tic-tac-toe" component={TicTacToePage} />
+            <Route path="/core" component={CorePage} />
             <Route path="/logout" component={LoginPage} />
           </div>
         </div>
