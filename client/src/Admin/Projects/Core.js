@@ -4,11 +4,202 @@ import FooterPage from "../../Layout/Footer/Footer";
 import prod1 from "../../images/img_14.png";
 import prod2 from "../../images/img_15.png";
 import prod3 from "../../images/img_16.png";
+import { Button } from "primereact/button";
 
 const Core = () => {
   return (
     <>
       <Layout></Layout>
+
+      <div className="grid mx-2 md:mx-8 mt-5">
+        <div className="py-5 px-6 w-full">
+          <ul className="list-none p-0 m-0 flex flex-column w-full md:flex-row">
+            <li className="relative mr-0 md:mr-8 flex-auto">
+              <div className="border-1 surface-border surface-card border-round p-3 flex flex-column md:flex-row align-items-center z-1">
+                <i className="pi pi-check-circle text-green-500 text-2xl md:text-4xl mb-2 md:mb-0 mr-0 md:mr-3"></i>
+                <div>
+                  <div className="text-900 font-medium mb-1">Applied</div>
+                  <span className="text-600 text-sm hidden md:block">
+                    Tempus iaculis urna id volutpat
+                  </span>
+                </div>
+              </div>
+              <div
+                className="w-full absolute top-50 left-100 surface-300 hidden md:block"
+                style={{ transform: "translateY(-50%)", height: "2px;" }}
+              ></div>
+            </li>
+            <li className="relative mr-0 md:mr-8 flex-auto">
+              <div className="border-2 border-blue-500 surface-card border-round p-3 flex flex-column md:flex-row align-items-center z-1">
+                <i className="pi pi-users text-blue-600 text-2xl md:text-4xl mb-2 md:mb-0 mr-0 md:mr-3"></i>
+                <div>
+                  <div className="text-blue-600 font-medium mb-1">
+                    Interview
+                  </div>
+                  <span className="text-600 text-sm hidden md:block">
+                    Nisi vitae suscipit tellus
+                  </span>
+                </div>
+              </div>
+              <div
+                className="w-full absolute top-50 left-100 surface-300 hidden md:block"
+                style={{ transform: "translateY(-50%)", height: "2px;" }}
+              ></div>
+            </li>
+            <li className="relative flex-auto">
+              <div className="border-1 surface-border surface-card border-round p-3 flex flex-column md:flex-row align-items-center z-1">
+                <i className="pi pi-check-circle text-600 text-2xl md:text-4xl mb-2 md:mb-0 mr-0 md:mr-3"></i>
+                <div>
+                  <div className="text-900 font-medium mb-1">Confirmation</div>
+                  <span className="text-600 text-sm hidden md:block">
+                    Sit amet est placerat in egestas erat
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="grid mx-2 md:mx-8 mt-5">
+        <div className="surface-0 md:my-8 mx-2 md:mx-6 w-full">
+          <div className="text-900 font-bold text-5xl mb-4 text-center">
+            Pricing Plans
+          </div>
+          <div className="text-700 text-xl mb-6 text-center line-height-3">
+            Make informed decisions and potentially save money by choosing the
+            most suitable option for your needs.
+          </div>
+        </div>
+
+        <div className="grid w-full">
+          <div className="col-12 lg:col-4">
+            <div className="p-3 h-full">
+              <div
+                className="shadow-2 p-3 h-full flex flex-column"
+                style={{ borderRadius: "6px" }}
+              >
+                <div className="text-900 font-medium text-xl mb-2">Basic</div>
+                <div className="text-600">Plan description</div>
+                <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <div className="flex align-items-center">
+                  <span className="font-bold text-2xl text-900">$9</span>
+                  <span className="ml-2 font-medium text-600">per month</span>
+                </div>
+                <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <ul className="list-none p-0 m-0 flex-grow-1">
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Arcu vitae elementum</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Dui faucibus in ornare</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Morbi tincidunt augue</span>
+                  </li>
+                </ul>
+                <hr className="mb-3 mx-0 border-top-1 border-bottom-none border-300 mt-auto" />
+                <Button
+                  label="Buy Now"
+                  className="p-3 w-full mt-auto p-button-outlined"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 lg:col-4">
+            <div className="p-3 h-full">
+              <div
+                className="shadow-2 p-3 h-full flex flex-column"
+                style={{ borderRadius: "6px" }}
+              >
+                <div className="text-900 font-medium text-xl mb-2">Premium</div>
+                <div className="text-600">Plan description</div>
+                <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <div className="flex align-items-center">
+                  <span className="font-bold text-2xl text-900">$29</span>
+                  <span className="ml-2 font-medium text-600">per month</span>
+                </div>
+                <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <ul className="list-none p-0 m-0 flex-grow-1">
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Arcu vitae elementum</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Dui faucibus in ornare</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Morbi tincidunt augue</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Duis ultricies lacus sed</span>
+                  </li>
+                </ul>
+                <hr className="mb-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <Button label="Buy Now" className="p-3 w-full" />
+              </div>
+            </div>
+          </div>
+
+          <div className="col-12 lg:col-4">
+            <div className="p-3 h-full">
+              <div
+                className="shadow-2 p-3 flex flex-column"
+                style={{ borderRadius: "6px" }}
+              >
+                <div className="text-900 font-medium text-xl mb-2">
+                  Enterprise
+                </div>
+                <div className="text-600">Plan description</div>
+                <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <div className="flex align-items-center">
+                  <span className="font-bold text-2xl text-900">$49</span>
+                  <span className="ml-2 font-medium text-600">per month</span>
+                </div>
+                <hr className="my-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <ul className="list-none p-0 m-0 flex-grow-1">
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Arcu vitae elementum</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Dui faucibus in ornare</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Morbi tincidunt augue</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Duis ultricies lacus sed</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Imperdiet proin</span>
+                  </li>
+                  <li className="flex align-items-center mb-3">
+                    <i className="pi pi-check-circle text-green-500 mr-2"></i>
+                    <span>Nisi scelerisque</span>
+                  </li>
+                </ul>
+                <hr className="mb-3 mx-0 border-top-1 border-bottom-none border-300" />
+                <Button
+                  label="Buy Now"
+                  className="p-3 w-full p-button-outlined"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="p-dataview-content my-6 mx-8">
         <div className="p-grid grid p-nogutter grid-nogutter">
           <article className="flex flex-column md:flex-row w-full gap-3 p-3 border-round border-1 surface-border mb-3">
