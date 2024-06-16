@@ -7,3 +7,6 @@ before_install:
   - source $HOME/google-cloud-sdk/path.bash.inc
   - gcloud components update kubectl
   - gcloud auth activate-service-account --key-file service-account.json
+  - gcloud config set project quiet-dimension-257609
+  - gcloud config set compute/zone us-central1
+  - gcloud container clusters get-credentials multi-client-cluster-1
