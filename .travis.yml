@@ -10,3 +10,4 @@ before_install:
   - gcloud config set project quiet-dimension-257609
   - gcloud config set compute/zone us-central1
   - gcloud container clusters get-credentials multi-client-cluster-1
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
