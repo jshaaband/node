@@ -53,7 +53,7 @@ const HomePage = () => {
 
       <div className="surface-0 my-4 md:my-6 mx-2 md:mx-6">
         <div className="text-900 font-bold  text-5xl mb-4 text-center">
-          Application Flow
+          Pesa Market Flow
         </div>
         <div className="text-700 text-xl mb-6 text-center line-height-3">
           Make informed decisions and potentially save money by choosing the
