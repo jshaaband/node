@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: client
-          image: didinkaj/multi-client:v1.1
+          image: didinkaj/multi-client
           ports:
             - containerPort: 3000
