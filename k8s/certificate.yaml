@@ -1,0 +1,18 @@
+apiVersion: cert-manager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: node-com-tls
+spec:
+  secretName: node-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: node.jdk.co.ke
+  dnsNames:
+    - node.jdk.co.ke
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+      - domains:
+          - node.jdk.co.ke
